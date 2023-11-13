@@ -23,31 +23,18 @@
 				<!-- Main -->
 					<div id="main">
 
-						 <section class="post">
-					                    <model-viewer alt="Room Model" src="assets/robot.glb" 
-					                      ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/Panda.webp" 
-					                      shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-				                </section>
-
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									
-									<h1>WEB AR<br />
-									</h1>
-									<p>Completed by Python</p>
-								</header>
-								<div class="image main"><img src="images/pic04.jpg" alt="" /></div>
-								<p> An interesting turtle crossing the road game. The player controls the turtle which can only go forwards, the goal is to avoid hitting by a bunch of randomly generated cars and reach the other side of the screen. When the level goes up, the cars speed up. 
-					
-									
-									
-									 
-									</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Michelle9527/Turtle-crossing" target="_blank"class="button">Check the codes on my Github</a></li>
-									</ul>
-							</section>
+						<model-viewer src="assets/robot.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+						
 
 					</div>
 
